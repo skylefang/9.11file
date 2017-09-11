@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	document.write('<table border=0 cellspacing=1 cellpadding=15 align=center>');
+	var a=prompt('这是一个可自定义的九九乘法表',10)*1;
+	 for(var i=1;i<=a;i++){
+	 	if(i%2==0){
+	 	   document.write('<tr bgcolor=pink>');
+	 	
+	 	}else{
+	 	   document.write('<tr bgcolor=yellow>');
+	 	}
+	 	  for(var j=1;j<=i;j++){
+	 	  	 document.write('<td>'+i+'*'+j+'='+i*j+'</td>');
+	 	  }
+	 	document.write('</tr>');
+	 }
+	document.write('</table>');
+</script>
+<script>
+	document.write('<table border=0 cellspacing=1 cellpadding=15 align=center>');
+	 for(var i=1;i<=9;i++){
+	 	 document.write('<tr>');
+	 	   for(var j=1;j<=i;j++){
+	 	  	 if(j%2==0){
+	 	  		document.write('<td bgcolor=skyblue>'+i+'*'+j+'='+i*j+'</td>');
+	 	     }else{
+	 	  	    document.write('<td bgcolor=red>'+i+'*'+j+'='+i*j+'</td>');
+	 	     }
+	       }
+	 	 document.write('</tr>');
+	    }
+	document.write('</table>');
+</script>

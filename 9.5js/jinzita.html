@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	    // 9*9格式的*
+		// for(var i=1;i<=6;i++){
+		// 	  for(var j=1;j<=i;j++){
+		// 	  	document.write('*');
+		// 	  }
+		// 	  document.write('<br/>')
+		// }
+		
+
+		//金字塔格式的*
+		/*var row=6;
+		for(var i=1;i<=row;i++){
+			for(var j=1;j<=row-i;j++){
+				document.write('-');
+			}
+			for(var j=1;j<=2*i-1;j++){
+				document.write('*');
+			}
+			document.write('<br/>');
+		}*/
+
+
+		//1 1 2 3 5 8 13 21
+		/*var i=1,j=1;
+		document.write(i+'&nbsp');
+		document., write(j+'&nbsp');
+		for(var k=0;k<=100;){
+			k = i + j;
+			document.write(k+'&nbsp');
+			i = j;
+			j = k;
+		}*/
+		//排序问题 降序
+		/*var arr=[2,56,59,62,99,41,52,102,15];
+		for(var i=0;i<arr.length;i++){
+			for(var j=i+1;j<arr.length;j++){
+				if(arr[i]<arr[j]){
+					var temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		} 
+		console.log(arr);*/
+		/*var range2=500;
+		rules (range2);
+		function rules(range){
+			var i=1,j=1;
+			document.write(i+'&nbsp');
+			document.write(j+'&nbsp');
+			for(var k=0;k<=range;){
+				k = i + j;
+				document.write(k+'&nbsp');
+				i = j;
+				j = k;
+			}
+		}*/
+		var row1=10;
+		star(row1);
+		function star(row){
+				var row;
+			for(var i=1;i<=row;i++){
+				for(var j=1;j<=row-i;j++){
+					document.write('-');
+				}
+				for(var j=1;j<=2*i-1;j++){
+					document.write('*');
+				}
+				document.write('<br/>');
+			}
+		}
+	</script>
+</body>
+</html>

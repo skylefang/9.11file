@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10*10表格</title>
+<script>
+	document.write('<table border=1 cellspacing=0 cellpadding=15 align=center>');
+	var c=prompt('这是一个可自定义表格',10);
+	 for(var i=1;i<=c;i++){
+	 	if(i%2==0){
+	 		document.write('<tr bgcolor=red>');
+	 	}else{
+	 		document.write('<tr bgcolor=yellow>');
+	 	}
+	 	  for(var j=1;j<=10;j++){
+	 	  	 document.write('<td>'+i+'*'+j+'='+i*j+'</td>');
+	 	  }
+	 	document.write('</tr>');
+	 }
+	document.write('</table>');
+</script>
+</head>
+<body>
+</body>
+</html>
+<script>
+	var table="<table border=1 cellspacing=0 cellpadding=15 align=center>"
+	 for(var i=1;i<=10;i++){
+	 	table+="<tr>"
+	 	  for(var j=1;j<=10;j++){
+	 	  	table+="<td>"+i+'-'+j+"</td>"
+	 	  }
+	 	table+="</tr>"
+	 }
+	 document.write(table);
+</script>
